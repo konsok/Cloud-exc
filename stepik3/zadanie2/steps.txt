@@ -1,0 +1,15 @@
+
+1. uruchom program
+    ./zadanie2.sh
+
+2. sprawdz czy strona jest na danym porcie
+    curl http://<ip_kontenera>:80
+
+3. zmien port lub plik konfiguracyjny
+    ./nginx-server.sh -p 4200 -c zmiana.conf
+
+4. sprawdz czy kontener zostal utworzony z niestandardowym adresem ip kontenera i/lub na porcie nginx
+    $ docker exec -it <nazwa_kontenera> cat /etc/nginx/nginx.conf
+
+5. sprawdz czy strona jest dostepna pod nowym adresem
+    curl http://<cip_kontenera>:4200
