@@ -1,0 +1,7 @@
+
+1. ./zadanie1.sh
+2. curl http://localhost:8080
+3.  echo "<html><body><h1>test message</h1></body></html>" > index.html
+    ./nginx-server.sh index.html
+
+4. curl http://localhost:8080
